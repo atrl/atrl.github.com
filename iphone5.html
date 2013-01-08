@@ -1,0 +1,730 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录手机QQ空间</title>
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" media="(device-height: 568px)" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--<script type="application/javascript" src="js/iscroll.js"></script>-->
+<!-- Main Stylesheet -->
+<base href="http://qzonestyle.gtimg.cn/qzone/phone/style/" id="baseUrl">
+<!--<link rel="stylesheet" href="css/base.css">-->
+<!--<link rel="stylesheet" href="css/style.css">-->
+<script type="application/javascript" src="../m/js/tutil.js"></script>
+<style type="text/css">
+/* reset */
+body{font-family:"Microsoft YaHei",Helvetica;word-wrap:break-word}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure,time{margin:0;padding:0;-webkit-text-size-adjust:none}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul,li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+section,aside,article,nav{display:block}
+a{color:#246183;text-decoration:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body{margin:0;font-size:14px;line-height:1.231}
+input,button{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.fr{float:right}
+.fl{float:left}
+.mr-10{margin-right:10px}
+.mt-10{margin-top:10px}
+.btn{display:inline-block;text-align:center;border:1px solid #ddd;padding:5px 10px;border-radius:4px;background:#f6f6f6;font-size:12px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fcfcfc),color-stop(100%,#efefef))}
+.btn-blue{color:#fff;border-color:#02527c;background-color:#179ee4;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#27aff5),color-stop(100%,#078cd1))}
+.btn-auto{font-size:18px;display:block;height:44px;line-height:44px;padding:0;margin:15px;box-shadow:0 0 1px #bababa}
+[class^="icon-"],[class*=" icon-"]{display:inline-block;width:16px;height:16px;line-height:16px;vertical-align:text-top;background-image:url(img/icon@2x.png);background-position:0 0;background-repeat:no-repeat;background-size:128px auto}
+.icon-arr-up2{background-position:-64px -48px;vertical-align:middle}
+.icon-arr-down2{background-position:-48px -48px;vertical-align:middle}
+.icon-refresh-up,.icon-refresh-down,.icon-error,.icon-loading,.icon-pop-info,.icon-pop-hook{width:32px;height:32px;vertical-align:middle}
+.icon-refresh-up{background-position:-64px -64px}
+.icon-refresh-down{background-position:-32px -64px}
+.icon-error{background-position:0 -64px}
+.icon-loading{background:#ccc}
+.icon-pop-info{background-position:0 -144px}
+.icon-pop-hook{background-position:-32px -144px}
+.table-view-wrap{background:#e3e3e3;overflow:hidden}
+.table-view-wrap .table-title{height:30px;line-height:30px;margin:0 30px -10px;font-size:16px;background:none;text-align:left;color:#888}
+.table-view-wrap .table-des{margin:-5px 30px 0;height:auto;line-height:20px;font-size:14px;background:none;text-align:center;color:#868686}
+.table-view{font-size:16px;display:block}
+.table-view.margin-15{margin:15px}
+.table-view li{height:44px;line-height:44px;padding:0 15px;background:#fff;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6}
+.table-view>li:first-child{border-top-left-radius:4px;border-top-right-radius:4px;box-shadow:0 0 1px #c7c7c7;border-top:1px solid #e6e6e6;display:-webkit-box;-webkit-box-flex:1}
+.table-view>li:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;box-shadow:0 1px 1px #c7c7c7;display:-webkit-box;-webkit-box-flex:1}
+.table-view li.corner-all{border-radius:5px;box-shadow:0 1px 1px #c7c7c7;margin:10px 0}
+.table-view li .r-des{float:right;line-height:44px}
+.table-view li .des{color:#bfbfbf}
+.table-view li .title{font-weight:bold;margin-right:15px;font-size:16px}
+.table-view li .icon-hook{margin-top:14px;margin-right:0}
+.table-view li .finger-touch{width:40px;height:40px;display:inline-block;font-size:0;text-align:center;display:-webkit-box;-webkit-box-align:start;box-align:center;-webkit-box-pack:center;box-pack:center;position: relative;right: -15px;margin-left: 10px;}
+.table-view li .finger-touch.xx{right: 0}
+.table-view.table-blue li{background:#59b2e3;border-bottom:1px solid #459ecf;border-top:1px solid #5eb7e8;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.avator{position:relative;display:inline-block;vertical-align:middle;border:2px solid #fff;border-radius:4px;background:#fff;box-shadow:0 0 5px #666}
+.avator.click .mask,.avator:hover .mask{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5}
+.avator-60{width:30px;height:30px}
+.avator-60 img{width:30px;height:30px}
+.close{ background-image: url(img/close.png);width: 25px; height: 25px; background-size: 100% auto;display: block; position: relative;top:8px;}
+.pop-layer-wp{position:absolute;width:100%;top:65%;margin-top:-35px;text-align:center;z-index:9999}
+.pop-layer{position:relative;display:inline-block;max-width:54%;padding:15px 15px 15px 45px;line-height:1.5em;text-align:left;background:rgba(0,0,0,.8);color:#fff;border-radius:4px}
+.pop-layer [class^="icon-"],.pop-layer [class*=" icon-"]{position:absolute;left:10px;top:7px}
+.pop-layer .loading-s-bg{position:absolute;left:15px;top:17px}
+.pop-layer-arr{display:block;max-width:100%;margin:0 15px;text-align:center;padding:5px 0}
+.pop-layer-arr .icon-pop-hook,.pop-layer-arr .icon-pop-info{position:static!important}
+.pop-layer-arr .arr-down{position:absolute;text-align:center;left:50%;margin-left:-7px;width:16px;bottom:-8px;height:8px;overflow:hidden;vertical-align:text-top;font-style:normal;color:#000;opacity:.7;-webkit-transform:rotate(180deg)}
+body{background:#e6e6e6;padding-bottom:200px}
+input,input:focus{border:none;outline:none;background-color:#fff}
+#wrapper{width:100%;overflow:auto}
+#scroller{width:100%;padding:0}
+.client-bar{height:56px;width:100%;overflow:hidden;border:1px solid #aaa;border-radius:5px;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(2%,#f2f2f2),color-stop(100%,#ddd));box-sizing:border-box;box-shadow:0 1px 3px #bbb}
+.client-bar .client-icon{float:left;display:inline-block;width:36px;height:36px;margin:8px}
+.client-bar .text-area{margin:7px 0;color:#999;font-size:12px}
+.client-bar .text-area h5{font-size:16px;font-weight:bold;margin-bottom:5px;color:#666}
+.client-bar .btn{padding:7px 15px;color:#333;border:1px solid #bbb;font-size:14px}
+.login-logo{width:75px;height:100px;margin:15px auto;background:url(img/login_logo.png) no-repeat;background-size:75px 100px}
+.login-logo-min{width:160px;height:48px;margin:15px 0 0 15px;background:url(img/login_logo_mini.png) no-repeat;background-size:160px auto}
+.login-bottom{position:;width:100%;bottom:0;background:#e6e6e6}
+.login-bottom span{display:inline-block;width:50%;height:45px;line-height:45px;text-align:center;margin-left:-1px;box-sizing:border-box}
+.login-bottom span:first-child{border-left:none}
+.table-view{min-width:200px}
+.table-view input{font-size:14px;height:24px;line-height:24px;margin:10px 0;display:-webkit-box;display:box;-webkit-box-flex:1;box-flex:1;-webkit-box-align:center}
+.table-view input:focus{outline:none}
+.ver-code{margin:0 15px;display:-webkit-box;display:box}
+.ver-code input{font-size:14px;height:20px;line-height:20px;padding:10px 15px;border-radius:5px;vertical-align:middle;margin-right:5px;box-shadow:1px 1px 1px #c7c7c7;display:-webkit-box;display:box;-webkit-box-flex:1;box-flex:1}
+.ver-code img{vertical-align:middle;flex:2;box-flex:2}
+.table-view li.dropdown{display:;position:absolute;padding:0;width:100%;background:#e1e1e1;color:#666;font-size:16px}
+.table-view li.dropdown ul li{border-radius:0;background:#e1e1e1;border-color:#c7c7c7;border-top:none;margin:0 31px 0 -1px}
+.table-view li.dropdown ul li:last-child{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
+.avator{margin:-5px 10px 0 0}
+.loading-s-bg{display:inline-block;vertical-align:middle;height:20px;width:20px;margin-top:-2px;background:url(img/loading.png);background-size:20px 20px}
+@-webkit-keyframes mask{0%{-webkit-transform:rotate(0deg)}
+10%{-webkit-transform:rotate(30deg)}
+20%{-webkit-transform:rotate(60deg)}
+30%{-webkit-transform:rotate(90deg)}
+40%{-webkit-transform:rotate(120deg)}
+50%{-webkit-transform:rotate(150deg)}
+60%{-webkit-transform:rotate(180deg)}
+70%{-webkit-transform:rotate(210deg)}
+80%{-webkit-transform:rotate(240deg)}
+90%{-webkit-transform:rotate(270deg)}
+100%{-webkit-transform:rotate(300deg)}
+110%{-webkit-transform:rotate(330deg)}
+120%{-webkit-transform:rotate(360deg)}}
+.loading-animate{-webkit-animation-duration:600ms;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:step-end;-webkit-animation-name:mask}
+.hide{display:none}
+#CssGaga{content:"20130106142335,185"}
+</style>
+</head>
+<body>
+<!--不使用iscroll的时候可以  在body或者container加 class="no-iscroll" -->
+<div id="container" class="">
+<div id="wrapper">
+<div id="scroller">
+<div class="client-bar" id="layer_down">
+<div class="fl">
+<span class="client-icon">
+<img src="img/logo_touch_client.png" width="36" height="36" alt="">
+</span>
+<div class="text-area fl">
+<h5>QQ空间客户端</h5>
+<p>分享生活，留住感动</p>
+</div>
+</div>
+<a href="http://z.qzone.com/" class="btn fr mt-10 mr-10 pt-5" id="btn_app_down">下载</a>
+</div>
+<div class="login-logo" id="layer_logo"></div>
+<div id="layer_form">
+<form id="log_form" onsubmit="QZTouch.Login.submit();return false;">
+<ul class="table-view margin-15">
+<li >
+<input type="text" placeholder="请输入QQ帐号" value="" id="ipt_uin">
+<i class="finger-touch xx" command="clearInput" style="display:none">
+<i class="close"></i>
+</i>
+<i class="finger-touch"  id="btn_uin_drop" style="display: none"><i class="icon-arr-down2"></i></i>
+</li>
+<li class="dropdown hide">
+<ul id="uin_drop_list"></ul>
+</li>
+<li>
+<input type="password" placeholder="请输入QQ密码" id="ipt_pwd" maxlength="16">
+<i class="finger-touch xx" command="clearInput" style="display:none">
+<i class="close"></i>
+</i>
+</li>
+</ul>
+<div class="ver-code" style="display: none;" id="cot_verify">
+<input type="text" id="ipt_verify" maxlength="4">
+<img id="img_verify" alt="" width="97" height="40">
+</div>
+<a href="javascript:;" onclick="QZTouch.Login.submit();return false;" class="btn btn-auto btn-blue" id="btn_submit" type="text" value="登录" readonly>登录</a>
+<input type="submit" value="" style="width: 1px; height: 1px; overflow: hidden; border: none;">
+</form>
+</div>
+<div class="login-bottom">
+<span><a href="http://qzonestyle.gtimg.cn/qzone/phone/m/login/forget_pwd.html">找回密码</a></span><span><a href="http://pt.3g.qq.com/reg?qfn=qq&loginurl=http%3A%2F%2Fpt%2E3g%2Eqq%2Ecom%2Fs%3Faid%3DnLoginqz%26KqqWap_Act%3D3%26sid%3DAYhooLKpl4NEQUHd-Ybj01UO">注册帐号</a></span>
+</div>
+<!--  		 <div class="pop-layer-wp" style="top:20px; display: none;" id="layer_tip">
+<div class="pop-layer pop-layer-arr">
+<i class="arr-down">◆</i><i class="icon-pop-hook"></i> ..
+</div>
+</div>-->
+<div id="layer_tip"class="pop-layer-wp" style="display: none;">
+<div class="pop-layer pop-layer-arr"><i class="icon-pop-info"></i> ..</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+var count=0;
+var QZTouch = window.QZTouch||{};
+QZTouch.Login = function(){
+var layer_logo = $("layer_logo")
+, layer_tip = $("layer_tip")
+, cot_verify = $("cot_verify")
+, ipt_verify = $("ipt_verify")
+, ipt_uin = $("ipt_uin")
+, ipt_pwd = $("ipt_pwd")
+, uin_drop_list = $("uin_drop_list")
+, btn_uin_drop = $("btn_uin_drop")
+, layer_form = $("layer_form")
+, img_verify = $("img_verify");
+var btn_app_down = $("btn_app_down");
+btn_app_down.href = TUtil.ua.Android ? "http://www.myapp.com/downcenter/a/48810?g_f=21906" : "http://blog.z.qq.com/for_include/common/url_jump_page.jsp?srctype=20&g_f=21907&jumpurl=http://itunes.apple.com/cn/app/id364183992&mt=8";
+var _needVerify = false, u_token="", rsid="";
+var layout = function(){
+var _tmr
+, _collapse = function(){
+setTimeout(function(){
+layer_down.style.display="none";
+layer_logo.style.display="none";//className = "login-logo-min";
+//window.scrollTo(0, 5);
+}, 200);
+}
+, _expand = function() {
+setTimeout(function(){
+layer_down.style.display="";
+layer_logo.style.display="";
+//						layer_logo.className = "login-logo";
+}, 200);
+};
+function renderCloseBtn(ae){
+//延时让blur事件滞后click
+setTimeout(function(){
+var type = ae&&ae.type;
+ae = ae&&ae.target ? ae.target : ae || document.activeElement;
+//log('ae',ae)
+$$(".table-view input").forEach(function(ipt, i){
+var clsBtn;
+if(clsBtn=$$(".close", ipt.parentNode)[0]){
+var showStyle = ipt==ae&&ipt.value.length>0&&type!="blur" ? "" : "none";
+clsBtn.style.display = showStyle;
+clsBtn.parentNode.style.display = showStyle;
+}
+});
+},150);
+}
+function closeDelegate(e, t) {//debugger
+var cmd = this.getAttribute("command");
+switch(cmd) {
+case "clearInput":
+closeDelegate.clearInput(this, e);
+break;
+case "clearPrompt":
+default:
+closeDelegate.clearPrompt(this, e);
+break;
+}
+}
+closeDelegate.clearInput = function(dom,e){
+var ipt;
+if(ipt = $$("input", dom.parentNode)[0]) {
+//setTimeout(function(){
+ipt.value = "";
+ipt.focus();
+renderCloseBtn();
+//},200);
+}
+listHistoryUin.hide();
+};
+closeDelegate.clearPrompt = function(dom) {//debugger
+var li = dom.parentNode, uin=li.getAttribute("index"), prompts = listHistoryUin.prompts;
+uin_drop_list.removeChild(li);
+var tmp = prompts.filter(function(_){return _.uin==uin});
+if(tmp&&tmp[0]){
+prompts.splice(prompts.indexOf(tmp[0]));
+}
+//重写cookie
+var cList=[];
+prompts.forEach(function(p){
+cList.push([p.uin, p.nick].join("|"));
+});
+TUtil.cookie.set("ng_pt_his", cList.join("!"), ".3g.qq.com", "/", 8760);//todo 关注这里的域名
+//下拉可见状态
+//btn_uin_drop.style.visibility=prompts.length?"visible":"hidden";
+btn_uin_drop.style.display=prompts.length?"":"none";
+};
+function listHistoryUin(){
+listHistoryUin.createList();
+listHistoryUin.isOpen ? listHistoryUin.hide() : listHistoryUin.show();
+}
+listHistoryUin.prompts=[];
+listHistoryUin.createList=function(){//debugger
+var c = TUtil.cookie.get("ng_pt_his").replace(/^"|(!"?)$/g,""), info = c.length?c.split("!"):[], tmp, dom=[], idx=0;//||'184868454|oo!934453671|xx'
+info=info.slice(0, 3);
+info.forEach(function(inf){
+if(inf.length){
+tmp = inf.split("|");
+listHistoryUin.prompts.push({
+uin : tmp[0],
+face : tmp[1]
+});
+}
+dom.push('<li index="'+escHTML(tmp[0])+'"><i class="finger-touch fr   xx"><i class="close"><i>×</i></i></i><span class="avator avator-60"><img src="'+escHTML(decodeURIComponent(tmp[1]))+'" alt=""><span class="mask"></span></span>'+escHTML(tmp[0])+'</li>')
+idx++;
+});
+uin_drop_list.innerHTML=dom.join("");
+listHistoryUin.prompts.length && (ipt_uin.value=listHistoryUin.prompts[0].uin, btn_uin_drop.style.display="");
+listHistoryUin.createList=TUtil.EMPTY_FUN;
+};
+listHistoryUin.show=function(){
+if(listHistoryUin.prompts.length) {
+uin_drop_list.parentNode.className = "dropdown";
+btn_uin_drop.innerHTML = '<i class="icon-arr-up2"></i>';
+}
+listHistoryUin.isOpen=true;
+};
+listHistoryUin.hide=function(){
+setTimeout(function(){//点击穿透
+uin_drop_list.parentNode.className = "dropdown hide";
+btn_uin_drop.innerHTML = '<i class="icon-arr-down2"></i>';
+},100);
+listHistoryUin.isOpen=false;
+};
+listHistoryUin.select=function(){
+var uin = this.getAttribute("index");
+uin && (ipt_uin.value = uin);
+listHistoryUin.hide();
+};
+!function(){
+listHistoryUin.createList();
+}();
+var verify = function(){//test : 267353992/wap
+//				ng_pt_his
+//真么知道一出来就要验证码
+var _vurl = "";
+return {
+hide : function(){
+_needVerify = false;
+cot_verify.style.display="none";
+},
+show : function(vurl){
+_vurl = vurl;
+img_verify.src = vurl+".gif";
+_needVerify = true;
+cot_verify.style.display="";
+ipt_verify.value="";
+ipt_verify.focus();
+},
+update : function(){
+img_verify.src = _vurl+".gif?r="+Math.random();
+ipt_verify.focus();
+}
+}
+}();
+return {
+fire : function(){
+clearTimeout(_tmr);
+_tmr = setTimeout(function(){
+var _this = layout;
+var ae = document.activeElement;
+listHistoryUin.hide();
+renderCloseBtn(ae);
+}, 100);
+},
+collapse : _collapse,
+expand : _expand,
+renderCloseBtn : renderCloseBtn,
+closeDelegate : closeDelegate,
+listHistoryUin : listHistoryUin,
+verify : verify
+}
+}();
+var Tip = function (){
+var _tmr = null;
+return function(str, refDom,isLoading){
+clearTimeout(_tmr);
+var icoStr = isLoading?'hide':'icon-pop-info';
+var stylStr = isLoading?'padding-left:15px;':'';
+layer_tip.innerHTML=[
+'<div class="pop-layer" style="'+stylStr+'"><i class="'+icoStr+'"></i> '+str+'</div>'
+].join("");
+setTimeout(function(){
+layer_tip.style.display="";
+},120);
+_tmr = setTimeout(function(){
+layer_tip.style.display="none";
+}, 2200);
+}
+}();
+//绑定事件
+!function(){
+TUtil.event.on($$(".table-view input, .ver-code input, #btn_submit"), "focus",layout.fire);
+TUtil.event.on($$(".table-view input"), "blur", layout.renderCloseBtn );
+TUtil.event.on($$(".table-view input"), "input", layout.renderCloseBtn);
+TUtil.event.on($$("#btn_uin_drop"), "click", layout.listHistoryUin );
+TUtil.event.on(img_verify, "tap", layout.verify.update );
+TUtil.event.delegate($$(".table-view")[0], ".xx", "click", layout.closeDelegate);
+TUtil.event.delegate(uin_drop_list, "li", "singleTap", layout.listHistoryUin.select);
+}();
+var getParameter = function(name) {
+var r=new RegExp("(\\?|#|&)" + name + "=([^&#?]*)(&|#|\\?|$)"),
+m = location.href.match(r);
+return decodeURIComponent(!m ? "" : m[2]);
+};
+var _cgi = '/login?act=json&sidtype=0', _go_url = "http://touch.m.qzone.com/infocenter?sid=";
+function doVerify(u, p, v){
+if(doVerify.lock) {return}
+if(!u) {
+ipt_uin.focus();
+Tip("请输入QQ帐号", ipt_uin);
+return;
+}
+if(!p) {
+ipt_pwd.focus();
+Tip("请输入QQ密码", ipt_pwd);
+return;
+}
+if(!v&&_needVerify) {
+ipt_verify.focus();
+Tip("请输入验证码", ipt_verify);
+return;
+}
+var _para = {
+pmd5:md5(p),
+qq:u,
+bid_code:'qzoneLogin',
+go_url : _go_url
+};
+if(_needVerify){
+_para.u_token=u_token;
+_para.r_sid=rsid;
+_para.verify=v;
+}
+doVerify.lock=true;
+Tip("登录中..",null,true);
+TUtil.Ajax.post(_cgi, _para, doVerify.success, doVerify.fail, function(){
+doVerify.lock = false;
+});
+}
+doVerify.lock = false;
+doVerify.success=function(resp){
+var url;
+if(url = resp.dataEntity.xdmUrl||resp.dataEntity.goUrl) {//没有统一平台侧的返回码格式
+location.replace(url);
+}
+};
+doVerify.fail=function(resp){
+var vurl;
+if(resp.code==40001) {
+vurl=resp.dataEntity.vurl;
+u_token=resp.dataEntity.u_token;
+rsid=resp.dataEntity.rsid;
+layout.verify.show(vurl);
+}else{
+layout.verify.hide();//只要验证码正确（密码错误等情况都不考虑），就隐藏验证码栏
+//				if(_needVerify){
+//					layout.verify.update();
+//				}
+}
+var msg = resp.dataEntity.msg||"网络繁忙";
+Tip(msg);
+};
+function _submit() {
+var u = TUtil.string.trim(ipt_uin.value)
+, p = ipt_pwd.value
+, v = TUtil.string.trim(ipt_verify.value);
+doVerify(u, p, v);
+}
+return {
+submit : _submit
+}
+}();
+</script>
+<script type="text/javascript">
+var hexcase = 1;
+var b64pad = "";
+var chrsz = 8;
+var mode = 32;
+function md5(A) {
+return hex_md5(A)
+}
+function hex_md5(A) {
+return binl2hex(core_md5(str2binl(A), A.length * chrsz))
+}
+function str_md5(A) {
+return binl2str(core_md5(str2binl(A), A.length * chrsz))
+}
+function core_md5(K, F) {
+K[F >> 5] |= 128 << ((F) % 32);
+K[(((F + 64) >>> 9) << 4) + 14] = F;
+var J = 1732584193;
+var I = -271733879;
+var H = -1732584194;
+var G = 271733878;
+for (var C = 0; C < K.length; C += 16) {
+var E = J;
+var D = I;
+var B = H;
+var A = G;
+J = md5_ff(J, I, H, G, K[C + 0], 7, -680876936);
+G = md5_ff(G, J, I, H, K[C + 1], 12, -389564586);
+H = md5_ff(H, G, J, I, K[C + 2], 17, 606105819);
+I = md5_ff(I, H, G, J, K[C + 3], 22, -1044525330);
+J = md5_ff(J, I, H, G, K[C + 4], 7, -176418897);
+G = md5_ff(G, J, I, H, K[C + 5], 12, 1200080426);
+H = md5_ff(H, G, J, I, K[C + 6], 17, -1473231341);
+I = md5_ff(I, H, G, J, K[C + 7], 22, -45705983);
+J = md5_ff(J, I, H, G, K[C + 8], 7, 1770035416);
+G = md5_ff(G, J, I, H, K[C + 9], 12, -1958414417);
+H = md5_ff(H, G, J, I, K[C + 10], 17, -42063);
+I = md5_ff(I, H, G, J, K[C + 11], 22, -1990404162);
+J = md5_ff(J, I, H, G, K[C + 12], 7, 1804603682);
+G = md5_ff(G, J, I, H, K[C + 13], 12, -40341101);
+H = md5_ff(H, G, J, I, K[C + 14], 17, -1502002290);
+I = md5_ff(I, H, G, J, K[C + 15], 22, 1236535329);
+J = md5_gg(J, I, H, G, K[C + 1], 5, -165796510);
+G = md5_gg(G, J, I, H, K[C + 6], 9, -1069501632);
+H = md5_gg(H, G, J, I, K[C + 11], 14, 643717713);
+I = md5_gg(I, H, G, J, K[C + 0], 20, -373897302);
+J = md5_gg(J, I, H, G, K[C + 5], 5, -701558691);
+G = md5_gg(G, J, I, H, K[C + 10], 9, 38016083);
+H = md5_gg(H, G, J, I, K[C + 15], 14, -660478335);
+I = md5_gg(I, H, G, J, K[C + 4], 20, -405537848);
+J = md5_gg(J, I, H, G, K[C + 9], 5, 568446438);
+G = md5_gg(G, J, I, H, K[C + 14], 9, -1019803690);
+H = md5_gg(H, G, J, I, K[C + 3], 14, -187363961);
+I = md5_gg(I, H, G, J, K[C + 8], 20, 1163531501);
+J = md5_gg(J, I, H, G, K[C + 13], 5, -1444681467);
+G = md5_gg(G, J, I, H, K[C + 2], 9, -51403784);
+H = md5_gg(H, G, J, I, K[C + 7], 14, 1735328473);
+I = md5_gg(I, H, G, J, K[C + 12], 20, -1926607734);
+J = md5_hh(J, I, H, G, K[C + 5], 4, -378558);
+G = md5_hh(G, J, I, H, K[C + 8], 11, -2022574463);
+H = md5_hh(H, G, J, I, K[C + 11], 16, 1839030562);
+I = md5_hh(I, H, G, J, K[C + 14], 23, -35309556);
+J = md5_hh(J, I, H, G, K[C + 1], 4, -1530992060);
+G = md5_hh(G, J, I, H, K[C + 4], 11, 1272893353);
+H = md5_hh(H, G, J, I, K[C + 7], 16, -155497632);
+I = md5_hh(I, H, G, J, K[C + 10], 23, -1094730640);
+J = md5_hh(J, I, H, G, K[C + 13], 4, 681279174);
+G = md5_hh(G, J, I, H, K[C + 0], 11, -358537222);
+H = md5_hh(H, G, J, I, K[C + 3], 16, -722521979);
+I = md5_hh(I, H, G, J, K[C + 6], 23, 76029189);
+J = md5_hh(J, I, H, G, K[C + 9], 4, -640364487);
+G = md5_hh(G, J, I, H, K[C + 12], 11, -421815835);
+H = md5_hh(H, G, J, I, K[C + 15], 16, 530742520);
+I = md5_hh(I, H, G, J, K[C + 2], 23, -995338651);
+J = md5_ii(J, I, H, G, K[C + 0], 6, -198630844);
+G = md5_ii(G, J, I, H, K[C + 7], 10, 1126891415);
+H = md5_ii(H, G, J, I, K[C + 14], 15, -1416354905);
+I = md5_ii(I, H, G, J, K[C + 5], 21, -57434055);
+J = md5_ii(J, I, H, G, K[C + 12], 6, 1700485571);
+G = md5_ii(G, J, I, H, K[C + 3], 10, -1894986606);
+H = md5_ii(H, G, J, I, K[C + 10], 15, -1051523);
+I = md5_ii(I, H, G, J, K[C + 1], 21, -2054922799);
+J = md5_ii(J, I, H, G, K[C + 8], 6, 1873313359);
+G = md5_ii(G, J, I, H, K[C + 15], 10, -30611744);
+H = md5_ii(H, G, J, I, K[C + 6], 15, -1560198380);
+I = md5_ii(I, H, G, J, K[C + 13], 21, 1309151649);
+J = md5_ii(J, I, H, G, K[C + 4], 6, -145523070);
+G = md5_ii(G, J, I, H, K[C + 11], 10, -1120210379);
+H = md5_ii(H, G, J, I, K[C + 2], 15, 718787259);
+I = md5_ii(I, H, G, J, K[C + 9], 21, -343485551);
+J = safe_add(J, E);
+I = safe_add(I, D);
+H = safe_add(H, B);
+G = safe_add(G, A)
+}
+if (mode == 16) {
+return Array(I, H)
+} else {
+return Array(J, I, H, G)
+}
+}
+function md5_cmn(F, C, B, A, E, D) {
+return safe_add(bit_rol(safe_add(safe_add(C, F), safe_add(A, D)), E), B)
+}
+function md5_ff(C, B, G, F, A, E, D) {
+return md5_cmn((B & G) | ((~B) & F), C, B, A, E, D)
+}
+function md5_gg(C, B, G, F, A, E, D) {
+return md5_cmn((B & F) | (G & (~F)), C, B, A, E, D)
+}
+function md5_hh(C, B, G, F, A, E, D) {
+return md5_cmn(B ^ G ^ F, C, B, A, E, D)
+}
+function md5_ii(C, B, G, F, A, E, D) {
+return md5_cmn(G ^ (B | (~F)), C, B, A, E, D)
+}
+function safe_add(A, D) {
+var C = (A & 65535) + (D & 65535);
+var B = (A >> 16) + (D >> 16) + (C >> 16);
+return (B << 16) | (C & 65535)
+}
+function bit_rol(A, B) {
+return (A << B) | (A >>> (32 - B))
+}
+function str2binl(D) {
+var C = Array();
+var A = (1 << chrsz) - 1;
+for (var B = 0; B < D.length * chrsz; B += chrsz) {
+C[B >> 5] |= (D.charCodeAt(B / chrsz) & A) << (B % 32)
+}
+return C
+}
+function binl2str(C) {
+var D = "";
+var A = (1 << chrsz) - 1;
+for (var B = 0; B < C.length * 32; B += chrsz) {
+D += String.fromCharCode((C[B >> 5] >>> (B % 32)) & A)
+}
+return D
+}
+function binl2hex(C) {
+var B = hexcase ? "0123456789ABCDEF" : "0123456789abcdef";
+var D = "";
+for (var A = 0; A < C.length * 4; A++) {
+D += B.charAt((C[A >> 2] >> ((A % 4) * 8 + 4)) & 15) + B.charAt((C[A >> 2] >> ((A % 4) * 8)) & 15)
+}
+return D
+}
+function hexchar2bin(str) {
+var arr = [];
+for (var i = 0; i < str.length; i = i + 2) {
+arr.push("\\x" + str.substr(i, 2))
+}
+arr = arr.join("");
+eval("var temp = '" + arr + "'");
+return temp
+}
+function uin2hex(str) {
+var maxLength = 16;
+str = parseInt(str);
+var hex = str.toString(16);
+var len = hex.length;
+for (var i = len; i < maxLength; i++) {
+hex = "0" + hex
+}
+var arr = [];
+for (var j = 0; j < maxLength; j += 2) {
+arr.push("\\x" + hex.substr(j, 2))
+}
+var result = arr.join("");
+eval('result="' + result + '"');
+return result
+}
+</script>
+<script type="text/javascript">
+if (typeof(window.TCISD) == "undefined") {
+window.TCISD = {};
+}
+TCISD.pv = function (sDomain, path, opts) {
+setTimeout(function () {
+TCISD.pv.send(sDomain, path, opts);
+}, 0);
+};
+(function () {
+var items = [], timer = null;
+var pvSender = {send:function (domain, url, rDomain, rUrl, opts) {
+opts=opts||{};
+items.push({dm:domain, url:url, rdm:rDomain || "", rurl:rUrl || ""});
+if (!timer) {
+timer = setTimeout(pvSender.doSend, opts.timer||800);
+}
+}, doSend:function () {
+timer = null;
+if (items.length) {
+var url;
+for (var i = 0; i < items.length; i++) {
+url = pvSender.getUrl(items.slice(0, items.length - i));
+if (url.length < 2000) {
+break;
+}
+}
+items = items.slice(Math.max(items.length - i, 1));
+if (i > 0) {
+timer = setTimeout(pvSender.doSend, 800);
+}
+TUtil.pingSender(url);
+}
+}, getUrl:function (list) {
+var item = list[0];
+var data = {dm:escape(item.dm), url:escape(item.url), rdm:escape(item.rdm), rurl:escape(item.rurl), pgv_pvid:pvSender.getId(), sds:Math.random()};
+var ext = [];
+for (var i = 1; i < list.length; i++) {
+var p = list[i];
+ext.push([escape(p.dm), escape(p.url), escape(p.rdm), escape(p.rurl)].join(":"));
+}
+if (ext.length) {
+data.ex_dm = ext.join(";")
+}
+var param = [];
+for (var p in data) {
+param.push(p + "=" + data[p]);
+}
+var url = [TCISD.pv.config.webServerInterfaceURL, "?cc=-&ct=-&java=1&lang=-&pf=-&scl=-&scr=-&tt=-&tz=-8&vs=3.3&flash=&", param.join("&")].join("");
+return url;
+}, getId:function () {
+var t, d, h, f;
+t = document.cookie.match(TCISD.pv._cookieP);
+if (t && t.length && t.length > 1) {
+d = t[1];
+} else {
+d = (Math.round(Math.random() * 2147483647) * (new Date().getUTCMilliseconds())) % 10000000000;
+document.cookie = "pgv_pvid=" + d + "; path=/; domain=qq.com; expires=Sun, 18 Jan 2038 00:00:00 GMT;";
+}
+h = document.cookie.match(TCISD.pv._cookieSSID);
+if (!h) {
+f = (Math.round(Math.random() * 2147483647) * (new Date().getUTCMilliseconds())) % 10000000000;
+document.cookie = "pgv_info=ssid=s" + f + "; path=/; domain=qq.com;";
+}
+return d;
+}};
+TCISD.pv.send = function (sDomain, path, opts) {
+sDomain = sDomain || location.hostname || "-";
+path = path || location.pathname;
+opts = opts || {};
+opts.referURL = opts.referURL || document.referrer;
+var t, d, r;
+t = opts.referURL.split(TCISD.pv._urlSpliter);
+t = t[0];
+t = t.split("/");
+d = t[2] || "-";
+r = "/" + t.slice(3).join("/");
+opts.referDomain = opts.referDomain || d;
+opts.referPath = opts.referPath || r;
+pvSender.send(sDomain, path, opts.referDomain, opts.referPath);
+};
+})()
+TCISD.pv._urlSpliter = /[\?#]/;
+TCISD.pv._cookieP = /(?:^|;+|\s+)pgv_pvid=([^;]*)/i;
+TCISD.pv._cookieSSID = /(?:^|;+|\s+)pgv_info=([^;]*)/i;
+TCISD.pv.config = {webServerInterfaceURL:"http://pingfore.qq.com/pingd"};
+!function(){
+TCISD.pv('m.qzone.com', '/login');
+}();
+</script>
